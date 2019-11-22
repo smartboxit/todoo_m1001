@@ -2,14 +2,13 @@
 
 from odoo import models, fields, api
 
-# class zemployee_car_request(models.Model):
-#     _name = 'zemployee_car_request.zemployee_car_request'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
+
+class CarRequest(models.Model):
+    _name="car.request"   #db table name = card.request
+    _description="car request"
+
+    name=fields.char(string="Request",required="true")
+    date_from=fields.datetime(string="Starting Date",default=fields.datetime.now)
+    date_to=fields.datetime(string="End Date",required="false")
+
