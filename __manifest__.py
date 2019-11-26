@@ -2,15 +2,12 @@
 {
     'name': "zemployee_car_request",
 
-    'summary': """
-        Substance: The experience of any change requires not only the perception of the altered qualities that constitute the change but also the concept of an underlying substance which persists through this alteration. 
-        (E.g., in order to know by experience that the classroom wall has changed in color from blue to yellow, 
-        I must not only perceive the different colors—blue then, yellow now—but also suppose that the wall itself has endured from then until now.) 
-        Thus, Kant supposed that the philosophical concept of substance (reflected in the scientific assumption of an external world of material objects) is an a priori condition for our experience.""",
+    'summary': "Aplikasi pemesanan mobil untuk keluar kantor via HRD dan GA",
+        
 
-    'description': """
-        This apps Intended for use internal only
-    """,
+    'description': "This apps Intended for use internal only",
+        
+    
 
     'author': "My Best Company Ever",
     'website': "http://www.linknet.com",
@@ -26,7 +23,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
